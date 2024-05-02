@@ -1,0 +1,106 @@
+.container {
+    position: fixed;
+    width: calc(100% - 40px);
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cream);
+    box-shadow: 0 0 5px black;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.bars {
+    display: none;
+    font-size: 25px;
+    color: var(--blue);
+}
+
+.links {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    outline: 1px solid var(--cream);
+}
+
+.linksClose {
+    display: none;
+}
+
+.linksLink a {
+    text-decoration: none;
+    font-weight: 800;
+    font-family: var(--karla);
+    color: var(--blue);
+    position: relative;
+}
+
+.linksLink a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--blue);
+    transition: 0.3s ease-in-out;
+}
+
+.linksLink a:hover::before {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .container {
+        height: 50px;
+    }
+    .bars {
+        display: block;
+        transition: 0.3s ease-in-out;
+    }
+    .barsOpen {
+        transform: scaleX(-1);
+    }
+    .links {
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        height: 100%;
+        flex-direction: column;
+        padding: 20px;
+        background-color: var(--blue);
+        transition: 0.3s ease-in-out;
+    }
+    .linksOpen {
+        left: 0;
+    }
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        height: calc(100vh - 50px);
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        pointer-events: none;
+    }
+    .overlayOpen {
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: all;
+    }
+    .linksClose {
+        margin-bottom: -20px;
+        display: flex;
+        align-self: flex-end;
+        font-size: 25px;
+        color: var(--cream);
+    }
+    .linksLink a {
+        color: var(--cream);
+    }
+}
