@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    height: calc(100vh - 60px);
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+svg {
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .container {
+        height: 400px;
+    }
+}
