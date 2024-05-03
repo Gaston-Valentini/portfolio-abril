@@ -1,5 +1,5 @@
 import style from "./Navbar.module.css";
-import logo from "../../assets/images/navbar-logo.png";
+import logo from "../../assets/images/logo-blue.png";
 import { RiMenuUnfoldLine } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";

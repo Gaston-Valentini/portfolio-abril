@@ -27,31 +27,35 @@
 }
 
 .form {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+}
+
+.formInputs {
     width: calc(100% - 40px);
-    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     gap: 20px;
     background-color: var(--blue);
-    border-radius: 10px;
 }
 
-.formSection {
+.formInputsSection {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.formSection span {
+.formInputsSection span {
     font-size: 20px;
     color: var(--orange);
 }
 
-.formSection input,
-.formSection textarea {
+.formInputsSection input,
+.formInputsSection textarea {
     padding: 10px;
     color: var(--cream);
     border: none;
@@ -59,22 +63,22 @@
     border-radius: 10px;
 }
 
-.formSection input::placeholder,
-.formSection textarea::placeholder {
+.formInputsSection input::placeholder,
+.formInputsSection textarea::placeholder {
     color: var(--blue);
 }
 
-.formSection input:focus,
-.formSection textarea:focus {
+.formInputsSection input:focus,
+.formInputsSection textarea:focus {
     outline: 2px solid var(--orange);
 }
 
-.formSection textarea {
+.formInputsSection textarea {
     height: 150px;
     resize: none;
 }
 
-.formSubmit {
+.formInputsSubmit {
     width: 100%;
     padding: 10px;
     color: var(--orange);
@@ -85,33 +89,80 @@
     transition: 0.3s ease-in-out;
 }
 
-.formSubmit:hover {
+.formInputsSubmit:hover {
     cursor: pointer;
     color: var(--blue);
     background-color: var(--orange);
 }
 
-.formSubmit:disabled {
+.formInputsSubmit:disabled {
     opacity: 0.5;
 }
 
-.formSubmit:disabled:hover {
+.formInputsSubmit:disabled:hover {
     cursor: not-allowed;
     color: var(--orange);
     background-color: var(--blue);
     border: 2px solid var(--orange);
 }
 
-.formMessageOk {
+.formInputsMessageOk {
     color: greenyellow;
 }
 
-.formMessageBad {
+.formInputsMessageBad {
     color: red;
+}
+
+.formData {
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--cream);
+}
+
+.formDataElement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.formDataElementText {
+    color: var(--lightBlue);
+}
+
+.formDataElementIcon {
+    font-size: 25px;
+    color: var(--orange);
+}
+
+.formDataSocial {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.formDataSocialIcon {
+    padding: 10px;
+    font-size: 25px;
+    color: var(--lightBlue);
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.formDataSocialIcon:hover {
+    color: var(--orange);
+    background-color: var(--lightBlue);
 }
 
 @media (max-width: 767px) {
     .container {
         padding: 50px 20px;
+    }
+    .form {
+        flex-direction: column;
     }
 }
