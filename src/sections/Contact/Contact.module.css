@@ -1,0 +1,117 @@
+.container {
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--lightBlue);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.headingTitle {
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--orange);
+}
+
+.headingText {
+    max-width: 1000px;
+    text-align: center;
+    color: var(--cream);
+}
+
+.form {
+    width: calc(100% - 40px);
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.formSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formSection span {
+    font-size: 20px;
+    color: var(--orange);
+}
+
+.formSection input,
+.formSection textarea {
+    padding: 10px;
+    color: var(--cream);
+    border: none;
+    background-color: var(--lightBlue);
+    border-radius: 10px;
+}
+
+.formSection input::placeholder,
+.formSection textarea::placeholder {
+    color: var(--blue);
+}
+
+.formSection input:focus,
+.formSection textarea:focus {
+    outline: 2px solid var(--orange);
+}
+
+.formSection textarea {
+    height: 150px;
+    resize: none;
+}
+
+.formSubmit {
+    width: 100%;
+    padding: 10px;
+    color: var(--orange);
+    border: none;
+    outline: 2px solid var(--orange);
+    background-color: var(--blue);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.formSubmit:hover {
+    cursor: pointer;
+    color: var(--blue);
+    background-color: var(--orange);
+}
+
+.formSubmit:disabled {
+    opacity: 0.5;
+}
+
+.formSubmit:disabled:hover {
+    cursor: not-allowed;
+    color: var(--orange);
+    background-color: var(--blue);
+    outline: 2px solid var(--orange);
+}
+
+.formMessageOk {
+    color: greenyellow;
+}
+
+.formMessageBad {
+    color: red;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 50px 20px;
+    }
+}
