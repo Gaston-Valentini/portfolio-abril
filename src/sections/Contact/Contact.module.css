@@ -79,7 +79,7 @@
     padding: 10px;
     color: var(--orange);
     border: none;
-    outline: 2px solid var(--orange);
+    border: 2px solid var(--orange);
     background-color: var(--blue);
     border-radius: 10px;
     transition: 0.3s ease-in-out;
@@ -99,7 +99,7 @@
     cursor: not-allowed;
     color: var(--orange);
     background-color: var(--blue);
-    outline: 2px solid var(--orange);
+    border: 2px solid var(--orange);
 }
 
 .formMessageOk {

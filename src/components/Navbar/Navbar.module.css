@@ -30,7 +30,7 @@
     list-style: none;
     display: flex;
     gap: 20px;
-    outline: 1px solid var(--cream);
+    outline: 2px solid var(--cream);
 }
 
 .linksClose {

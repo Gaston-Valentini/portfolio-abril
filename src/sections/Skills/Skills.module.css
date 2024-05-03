@@ -1,10 +1,13 @@
 .container {
-    padding: 100px 50px;
+    background-color: var(--cream);
+}
+
+.content {
+    padding: 50px 50px 100px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    background-color: var(--cream);
 }
 
 .heading {
@@ -69,9 +72,13 @@
     border-radius: 0 0 10px 10px;
 }
 
+.wave {
+    transform: translateY(7px);
+}
+
 @media (max-width: 767px) {
-    .container {
-        padding: 50px 20px;
+    .content {
+        padding: 20px 20px 50px 20px;
     }
     .cards {
         grid-template-columns: 1fr;

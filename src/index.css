@@ -7,3 +7,22 @@
     --kaushan: "Kaushan Script", cursive;
     --karla: "Karla", sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-top: 60px solid var(--cream);
+    background-color: var(--brown);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cream);
+}
+
+@media (max-width: 767px) {
+    ::-webkit-scrollbar-thumb {
+        border-top: 50px solid var(--cream);
+    }
+}
