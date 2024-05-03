@@ -1,0 +1,118 @@
+.container {
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--blue);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.headingTitle {
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--orange);
+}
+
+.headingText {
+    max-width: 1000px;
+    text-align: center;
+    color: var(--cream);
+}
+
+.cards {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+    gap: 10px;
+}
+
+.cardsContainer {
+    transition: 0.3s ease-in-out;
+}
+
+.cardsContainer:hover .cardsCard {
+    transform: scaleY(-1);
+}
+
+.cardsContainer:hover .cardsCardOverlay {
+    background-color: var(--orange);
+}
+
+.cardsContainer:hover .cardsCardTitle {
+    transform: scaleY(-1);
+    color: var(--blue);
+}
+
+.cardsContainer:hover .cardsCardShow {
+    display: flex;
+    transform: scaleY(-1);
+    padding: 10px;
+    border: 2px solid var(--blue);
+}
+
+.cardsCard {
+    height: 100%;
+    border: 2px solid var(--orange);
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.cardsCardOverlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardsCardTitle {
+    font-size: 30px;
+    color: var(--orange);
+    transition: 0.3s ease-in-out;
+}
+
+.cardsCardShow {
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.cardsCardShow:hover {
+    cursor: pointer;
+    color: var(--orange);
+    background-color: var(--blue);
+}
+
+.cardsCardText {
+    display: none;
+}
+
+.cardsCardGallery {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .cards {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 50px 20px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px;
+    }
+}

@@ -1,4 +1,5 @@
 import style from "./Navbar.module.css";
+import logo from "../../assets/images/navbar-logo.png";
 import { RiMenuUnfoldLine } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
@@ -12,7 +13,9 @@ export default function Navbar() {
 
     return (
         <nav className={style.container}>
-            <div className={style.logo}>Abril Valentini</div>
+            <div className={style.logo}>
+                <img src={logo} />
+            </div>
             <RiMenuUnfoldLine className={!isOpen ? style.bars : `${style.bars} ${style.barsOpen}`} onClick={switchOpen} />
             <div className={!isOpen ? style.overlay : `${style.overlay} ${style.overlayOpen}`}>
                 <ul className={!isOpen ? style.links : `${style.links} ${style.linksOpen}`}>

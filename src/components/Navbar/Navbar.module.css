@@ -12,7 +12,11 @@
 }
 
 .logo {
-    font-size: 25px;
+    height: 80%;
+}
+
+.logo img {
+    height: 100%;
 }
 
 .bars {
