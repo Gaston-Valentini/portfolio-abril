@@ -25,7 +25,7 @@ export default function Contact() {
     };
 
     return (
-        <section className={style.container}>
+        <section className={style.container} id="contact">
             <div className={style.heading}>
                 <p className={style.headingTitle}>Contacto</p>
                 <p className={style.headingText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quisquam veritatis ad laboriosam aperiam debitis minus! Nesciunt aut ut totam, odio velit fugiat perferendis tempora odit magnam! Corporis, ipsam minima?</p>

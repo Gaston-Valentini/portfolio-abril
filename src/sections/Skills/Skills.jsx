@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Skills() {
     return (
-        <section className={style.container}>
+        <section className={style.container} id="skills">
             <div className={style.content}>
                 <div className={style.heading}>
                     <p className={style.headingTitle}>Habilidades</p>

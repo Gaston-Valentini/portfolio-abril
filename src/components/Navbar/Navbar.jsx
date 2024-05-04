@@ -21,22 +21,27 @@ export default function Navbar() {
                 <ul className={!isOpen ? style.links : `${style.links} ${style.linksOpen}`}>
                     <IoMdClose className={style.linksClose} onClick={switchOpen} />
                     <li className={style.linksLink}>
-                        <a href="#" onClick={switchOpen}>
+                        <a href="#header" onClick={switchOpen}>
                             Inicio
                         </a>
                     </li>
                     <li className={style.linksLink}>
-                        <a href="#" onClick={switchOpen}>
-                            Servicios
+                        <a href="#about" onClick={switchOpen}>
+                            Sobre mi
                         </a>
                     </li>
                     <li className={style.linksLink}>
-                        <a href="#" onClick={switchOpen}>
-                            Preguntas frecuentes
+                        <a href="#proyects" onClick={switchOpen}>
+                            Proyectos
                         </a>
                     </li>
                     <li className={style.linksLink}>
-                        <a href="#" onClick={switchOpen}>
+                        <a href="#skills" onClick={switchOpen}>
+                            Habilidades
+                        </a>
+                    </li>
+                    <li className={style.linksLink}>
+                        <a href="#contact" onClick={switchOpen}>
                             Contacto
                         </a>
                     </li>

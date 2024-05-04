@@ -26,7 +26,7 @@ export default function Projects() {
     ];
 
     return (
-        <section className={style.container}>
+        <section className={style.container} id="proyects">
             <div className={style.content}>
                 <div className={style.heading}>
                     <p className={style.headingTitle}>Proyectos</p>

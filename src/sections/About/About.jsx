@@ -5,7 +5,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function About() {
     return (
-        <section className={style.container}>
+        <section className={style.container} id="about">
             <div className={style.content}>
                 <div className={style.image}>
                     <div className={style.imageImages}>

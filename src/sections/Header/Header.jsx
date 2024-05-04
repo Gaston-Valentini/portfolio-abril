@@ -3,7 +3,7 @@ import video from "../../assets/videos/test.mp4";
 
 export default function Header() {
     return (
-        <section className={style.container}>
+        <section className={style.container} id="header">
             <video autoPlay muted loop>
                 <source src={video} type="video/mp4" />
             </video>
