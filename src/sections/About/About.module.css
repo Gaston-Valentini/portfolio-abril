@@ -16,77 +16,67 @@
 
 .image {
     height: 100%;
+    width: 100%;
     display: flex;
-}
-
-.imageImages {
+    align-items: flex-end;
     position: relative;
-    width: 100%;
-    height: 500px;
-    outline: 2px solid var(--brown);
-    border-radius: 10px;
 }
 
-.imageImagesPhoto {
-    height: 100%;
+.imageContent {
+    height: 70%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
 }
 
-.image hr {
-    display: none;
+.imageContentCircle {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: var(--cream);
+}
+
+.imagePhoto {
+    width: 100%;
+    position: absolute;
+}
+
+.imagePhoto img {
+    width: 100%;
+    transform: translateY(6px);
 }
 
 .imageSocial {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
-.imageSocialDownload {
-    padding: 10px;
-    white-space: nowrap;
-    font-family: var(--karla);
-    font-weight: 800;
-    color: var(--brown);
-    background-color: white;
-    outline: 2px dashed var(--brown);
-    border-radius: 0 10px 10px 0;
-}
-
-.imageSocialDownload:hover {
-    cursor: pointer;
-    color: var(--cream);
-    background-color: var(--brown);
-    transition: 0.3s ease-in-out;
-}
-
-.imageSocialTag {
+.imageSocialLeft {
+    width: max-content;
     padding: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
-    text-decoration: none;
-    color: var(--brown);
-    background-color: white;
-    outline: 2px dashed var(--brown);
-    border-radius: 0 10px 10px 0;
-}
-
-.imageSocialTag:hover {
     color: var(--cream);
-    background-color: var(--brown);
-    transition: 0.3s ease-in-out;
+    background-color: var(--blue);
+    border-radius: 25px;
 }
 
-.imageSocialTagIcon {
-    font-size: 25px;
-}
-
-.imageSocialTagText {
-    font-family: var(--karla);
-    font-weight: 800;
+.imageSocialRight {
+    width: max-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--cream);
+    background-color: var(--blue);
+    border-radius: 25px;
 }
 
 .data {
@@ -110,17 +100,6 @@
 @media (max-width: 1300px) {
     .content {
         grid-template-columns: 1fr 1fr;
-    }
-    .image {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .image hr {
-        transform: translateX(-2px) translateY(-2px);
-        display: flex;
-        height: 20px;
-        width: 0px;
-        border: 1px dashed var(--brown);
     }
 }
 

@@ -1,28 +1,31 @@
 import style from "./About.module.css";
-import aboutPhoto from "../../assets/images/test.jpg";
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import aboutPhoto from "../../assets/images/about-photo.png";
+import { FaRegFilePdf, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function About() {
     return (
         <section className={style.container} id="about">
             <div className={style.content}>
                 <div className={style.image}>
-                    <div className={style.imageImages}>
-                        <img src={aboutPhoto} className={style.imageImagesPhoto} />
+                    <div className={style.imageContent}>
+                        <div className={style.imageContentCircle}></div>
                     </div>
-                    <hr />
+                    <div className={style.imagePhoto}>
+                        <img src={aboutPhoto} />
+                    </div>
                     <div className={style.imageSocial}>
-                        <div className={style.imageSocialDownload}>Descargar CV</div>
-                        <hr />
-                        <a href="#" className={style.imageSocialTag}>
-                            <FaLinkedin className={style.imageSocialTagIcon} />
-                            <p className={style.imageSocialTagText}>Linkedin</p>
-                        </a>
-                        <hr />
-                        <a href="#" className={style.imageSocialTag}>
-                            <FaInstagram className={style.imageSocialTagIcon} />
-                            <p className={style.imageSocialTagText}>Instagram</p>
-                        </a>
+                        <div className={style.imageSocialLeft}>
+                            <FaRegFilePdf />
+                            <p>Descargar CV</p>
+                        </div>
+                        <div className={style.imageSocialRight}>
+                            <FaLinkedin />
+                            <p>Linkedin</p>
+                        </div>
+                        <div className={style.imageSocialLeft}>
+                            <FaInstagram />
+                            <p>Instagram</p>
+                        </div>
                     </div>
                 </div>
                 <div className={style.data}>
