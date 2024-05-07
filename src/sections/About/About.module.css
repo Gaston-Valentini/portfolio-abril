@@ -24,12 +24,14 @@
     width: 100%;
     height: 500px;
     outline: 2px solid var(--brown);
+    border-radius: 10px;
 }
 
 .imageImagesPhoto {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .image hr {
@@ -49,7 +51,8 @@
     font-weight: 800;
     color: var(--brown);
     background-color: white;
-    outline: 2px solid var(--brown);
+    outline: 2px dashed var(--brown);
+    border-radius: 0 10px 10px 0;
 }
 
 .imageSocialDownload:hover {
@@ -67,7 +70,8 @@
     text-decoration: none;
     color: var(--brown);
     background-color: white;
-    outline: 2px solid var(--brown);
+    outline: 2px dashed var(--brown);
+    border-radius: 0 10px 10px 0;
 }
 
 .imageSocialTag:hover {
@@ -112,12 +116,11 @@
         align-items: flex-start;
     }
     .image hr {
-        transform: translateX(-2px);
+        transform: translateX(-2px) translateY(-2px);
         display: flex;
         height: 20px;
-        width: 2px;
-        background-color: var(--brown);
-        border: none;
+        width: 0px;
+        border: 1px dashed var(--brown);
     }
 }
 
