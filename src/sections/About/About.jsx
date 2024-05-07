@@ -1,5 +1,4 @@
 import style from "./About.module.css";
-import aboutOverlay from "../../assets/images/about-overlay.png";
 import aboutPhoto from "../../assets/images/test.jpg";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
@@ -10,7 +9,6 @@ export default function About() {
                 <div className={style.image}>
                     <div className={style.imageImages}>
                         <img src={aboutPhoto} className={style.imageImagesPhoto} />
-                        <img src={aboutOverlay} className={style.imageImagesOverlay} />
                     </div>
                     <hr />
                     <div className={style.imageSocial}>

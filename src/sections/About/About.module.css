@@ -32,18 +32,6 @@
     object-fit: cover;
 }
 
-.imageImagesOverlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.imageImagesOverlay {
-    width: 100%;
-}
-
 .image hr {
     display: none;
 }
