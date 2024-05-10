@@ -1,5 +1,6 @@
 import style from "./About.module.css";
 import aboutPhoto from "../../assets/images/about-photo.png";
+import cv from "../../assets/files/CV.pdf";
 import { FaRegFilePdf, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function About() {
@@ -7,25 +8,22 @@ export default function About() {
         <section className={style.container} id="about">
             <div className={style.content}>
                 <div className={style.image}>
-                    <div className={style.imageContent}>
-                        <div className={style.imageContentCircle}></div>
-                    </div>
-                    <div className={style.imagePhoto}>
-                        <img src={aboutPhoto} />
-                    </div>
-                    <div className={style.imageSocial}>
-                        <div className={style.imageSocialLeft}>
-                            <FaRegFilePdf />
-                            <p>Descargar CV</p>
+                    <div className={style.imageContainer}>
+                        <div className={style.imageContainerCircle}></div>
+                        <div className={style.imagePhoto}>
+                            <img src={aboutPhoto} />
                         </div>
-                        <div className={style.imageSocialRight}>
-                            <FaLinkedin />
-                            <p>Linkedin</p>
-                        </div>
-                        <div className={style.imageSocialLeft}>
+                    </div>
+                    <div className={style.imageButtons}>
+                        <a href="https://www.instagram.com/a.v.a._studio?igsh=MXhwZTZidTc5bDByYQ==" className={style.imageButtonsLink}>
                             <FaInstagram />
-                            <p>Instagram</p>
-                        </div>
+                        </a>
+                        <a href={cv} download="Abril-Valentini-CV.pdf" className={style.imageButtonsDownload}>
+                            <FaRegFilePdf />
+                        </a>
+                        <a href="https://www.linkedin.com/in/abril-valentini-1a8166292/" className={style.imageButtonsLink}>
+                            <FaLinkedin />
+                        </a>
                     </div>
                 </div>
                 <div className={style.data}>

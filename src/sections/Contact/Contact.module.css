@@ -7,23 +7,10 @@
     background-color: var(--orange);
 }
 
-.heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.headingTitle {
+.title {
     font-size: 60px;
     font-weight: 800;
     color: var(--blue);
-}
-
-.headingText {
-    max-width: 1000px;
-    text-align: center;
-    color: var(--cream);
 }
 
 .form {
@@ -31,152 +18,117 @@
     max-width: 1000px;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 20px;
 }
 
 .formInputs {
-    width: calc(100% - 40px);
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     gap: 20px;
-    background-color: var(--blue);
-    border-radius: 10px 0 10px 10px;
+    background-color: var(--lightBlue);
+    border-radius: 25px;
 }
 
-.formInputsSection {
-    width: 100%;
+.formInputsFields {
+    width: calc(100% - 40px);
+    display: flex;
+    gap: 20px;
+}
+
+.formInputsFieldsElements {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex-grow: 1;
 }
 
-.formInputsSection span {
-    font-size: 20px;
-    color: var(--orange);
-}
-
-.formInputsSection input,
-.formInputsSection textarea {
-    padding: 10px;
-    color: var(--blue);
+.formInputsFieldsElements input,
+.formInputsFieldsElements textarea {
+    height: 25px;
+    padding: 10px 15px;
     border: none;
     background-color: var(--cream);
-    border-radius: 10px;
-}
-
-.formInputsSection input::placeholder,
-.formInputsSection textarea::placeholder {
-    color: var(--blue);
-}
-
-.formInputsSection input:focus,
-.formInputsSection textarea:focus {
-    outline: 2px solid var(--orange);
-}
-
-.formInputsSection textarea {
-    height: 150px;
+    border-radius: 35px;
     resize: none;
 }
 
-.formInputsSubmit {
-    width: 100%;
-    padding: 10px;
-    color: var(--orange);
-    border: none;
-    border: 2px solid var(--orange);
-    background-color: var(--blue);
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-}
-
-.formInputsSubmit:hover {
-    cursor: pointer;
+.formInputsFieldsElements input::placeholder,
+.formInputsFieldsElements textarea::placeholder {
     color: var(--blue);
-    background-color: var(--orange);
 }
 
-.formInputsSubmit:disabled {
-    opacity: 0.5;
+.formInputsFieldsElements input:focus,
+.formInputsFieldsElements textarea:focus {
+    outline: none;
 }
 
-.formInputsSubmit:disabled:hover {
-    cursor: not-allowed;
-    color: var(--orange);
-    background-color: var(--blue);
-    border: 2px solid var(--orange);
+.formInputsFieldsSubmit {
+    padding: 0 10px;
+    color: var(--cream);
+    background-color: var(--brown);
+    border: none;
+    border-radius: 25px;
+    border: 2px solid var(--cream);
+    transition: 0.3s;
+}
+
+.formInputsFieldsSubmit:hover {
+    cursor: pointer;
+    color: var(--brown);
+    background-color: var(--cream);
+}
+
+.formInputsFieldsSubmit svg {
+    font-size: 25px;
 }
 
 .formInputsMessageOk {
-    color: greenyellow;
+    color: rgb(166, 255, 0);
 }
 
-.formInputsMessageBad {
-    color: red;
+.formInputsMessageNo {
+    color: rgb(255, 0, 0);
 }
 
 .formData {
     display: flex;
     flex-direction: column;
-}
-
-.formDataInfo {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 10px;
-    background-color: var(--cream);
-    border-radius: 0 10px 10px 0;
 }
 
-.formDataInfoElement {
+.formDataElement {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.formDataInfoElementText {
-    color: var(--lightBlue);
+.formDataElement svg {
+    font-size: 20px;
 }
 
-.formDataInfoElementIcon {
-    font-size: 25px;
-    color: var(--orange);
+.logo {
+    height: 60px;
 }
 
-.formDataInfoSocial {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.formDataInfoSocialIcon {
-    padding: 10px;
-    font-size: 25px;
-    color: var(--lightBlue);
-    border: 2px solid var(--orange);
-    border-radius: 50%;
-    transition: 0.3s ease-in-out;
-}
-
-.formDataInfoSocialIcon:hover {
-    color: var(--orange);
-    background-color: var(--lightBlue);
-}
-
-.formImage {
+.logo img {
     height: 100%;
-    width: calc(100% - 40px);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--orange);
 }
 
-.formImage img {
-    width: 80%;
+.developer {
+    color: var(--cream);
+    font-weight: 800;
+}
+
+.developer a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.developer a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 767px) {
@@ -184,6 +136,7 @@
         padding: 50px 20px;
     }
     .form {
+        display: flex;
         flex-direction: column;
     }
 }

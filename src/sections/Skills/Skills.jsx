@@ -1,5 +1,6 @@
 import style from "./Skills.module.css";
-import { FaInstagram } from "react-icons/fa";
+import { FaHandshake, FaBookBookmark } from "react-icons/fa6";
+import { PiHeadCircuit } from "react-icons/pi";
 
 export default function Skills() {
     return (
@@ -14,36 +15,42 @@ export default function Skills() {
                         <div className={style.cardsCardTitle} style={{ backgroundColor: "var(--orange)" }}>
                             <p className={style.cardsCardTitleText}>TÉCNICAS</p>
                         </div>
-                        <FaInstagram className={style.cardsCardIcon} style={{ backgroundColor: "var(--orange)" }} />
+                        <FaHandshake className={style.cardsCardIcon} style={{ backgroundColor: "var(--orange)" }} />
                         <ul className={style.cardsCardData}>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
+                            <li className={style.cardsCardDataElement}>- Compañerismo</li>
+                            <li className={style.cardsCardDataElement}>- Responsabilidad</li>
+                            <li className={style.cardsCardDataElement}>- Atención al detalle</li>
+                            <li className={style.cardsCardDataElement}>- Resolución de problemas</li>
+                            <li className={style.cardsCardDataElement}>- Carisma</li>
+                            <li className={style.cardsCardDataElement}>- Creatividad</li>
                         </ul>
                     </div>
                     <div className={style.cardsCard}>
                         <div className={style.cardsCardTitle} style={{ backgroundColor: "var(--lightBlue)" }}>
                             <p className={style.cardsCardTitleText}>BLANDAS</p>
                         </div>
-                        <FaInstagram className={style.cardsCardIcon} style={{ backgroundColor: "var(--lightBlue)" }} />
+                        <PiHeadCircuit className={style.cardsCardIcon} style={{ backgroundColor: "var(--lightBlue)" }} />
                         <ul className={style.cardsCardData}>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
+                            <li className={style.cardsCardDataElement}>- Paquete Adobe</li>
+                            <li className={style.cardsCardDataElement}>- Paquete Microsoft</li>
+                            <li className={style.cardsCardDataElement}>- Corte y confección</li>
+                            <li className={style.cardsCardDataElement}>- Patronaje</li>
+                            <li className={style.cardsCardDataElement}>- Estampados</li>
+                            <li className={style.cardsCardDataElement}>- Geometrales</li>
+                            <li className={style.cardsCardDataElement}>- Ficha técnica</li>
+                            <li className={style.cardsCardDataElement}>- Rapport</li>
                         </ul>
                     </div>
                     <div className={style.cardsCard}>
                         <div className={style.cardsCardTitle} style={{ backgroundColor: "var(--blue)" }}>
                             <p className={style.cardsCardTitleText}>IDIOMAS</p>
                         </div>
-                        <FaInstagram className={style.cardsCardIcon} style={{ backgroundColor: "var(--blue)" }} />
+                        <FaBookBookmark className={style.cardsCardIcon} style={{ backgroundColor: "var(--blue)" }} />
                         <ul className={style.cardsCardData}>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
-                            <li className={style.cardsCardDataElement}>- Habilidad 1</li>
+                            <li className={style.cardsCardDataElement}>- Español: Nativo</li>
+                            <li className={style.cardsCardDataElement}>- Ingles: C1</li>
+                            <li className={style.cardsCardDataElement}>- Italiano: B1</li>
+                            <li className={style.cardsCardDataElement}>- Francés: Básico</li>
                         </ul>
                     </div>
                 </div>

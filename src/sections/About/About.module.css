@@ -15,68 +15,85 @@
 }
 
 .image {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
+    height: max-content;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
 }
 
-.imageContent {
-    height: 70%;
-    width: 100%;
+.imageContainer {
+    aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--orange);
+    background-color: var(--lightBlue);
+    border-radius: 10px 10px 0 0;
+    position: relative;
 }
 
-.imageContentCircle {
-    width: 90%;
+.imageContainerCircle {
     height: 90%;
-    border-radius: 50%;
+    width: 90%;
     background-color: var(--cream);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--cream);
 }
 
 .imagePhoto {
-    width: 100%;
     position: absolute;
+    height: 100%;
 }
 
 .imagePhoto img {
-    width: 100%;
-    transform: translateY(6px);
-}
-
-.imageSocial {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     height: 100%;
-    width: 100%;
-    position: absolute;
 }
 
-.imageSocialLeft {
-    width: max-content;
+.imageButtons {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--brown);
+    border-top: 2px solid var(--cream);
+    border-radius: 0 0 10px 10px;
+}
+
+.imageButtonsLink {
     padding: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: var(--cream);
-    background-color: var(--blue);
-    border-radius: 25px;
+    color: var(--lightBlue);
+    background-color: var(--cream);
+    border: 2px solid var(--cream);
+    border-radius: 50%;
+    transition: 0.3s;
 }
 
-.imageSocialRight {
-    width: max-content;
+.imageButtonsLink:hover {
+    cursor: pointer;
+    color: var(--cream);
+    background-color: var(--lightBlue);
+}
+
+.imageButtonsDownload {
     padding: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
     color: var(--cream);
-    background-color: var(--blue);
-    border-radius: 25px;
+    border: 2px solid var(--cream);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.imageButtonsDownload:hover {
+    cursor: pointer;
+    color: var(--brown);
+    background-color: var(--cream);
+}
+
+.imageButtonsLink svg,
+.imageButtonsDownload svg {
+    font-size: 30px;
 }
 
 .data {
@@ -103,10 +120,23 @@
     }
 }
 
+@media (max-width: 991px) {
+    .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .image {
+        width: 100%;
+        max-width: 400px;
+    }
+    .dataText {
+        text-align: center;
+    }
+}
+
 @media (max-width: 767px) {
     .content {
         padding: 50px 20px 20px;
-        display: flex;
-        flex-direction: column-reverse;
     }
 }
