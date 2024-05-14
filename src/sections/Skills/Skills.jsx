@@ -6,16 +6,13 @@ export default function Skills() {
     return (
         <section className={style.container} id="skills">
             <div className={style.content}>
-                <div className={style.heading}>
-                    <p className={style.headingTitle}>Habilidades</p>
-                    <p className={style.headingText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam, labore adipisci ab consectetur voluptas, ipsam numquam mollitia cupiditate asperiores tempore, eveniet iusto beatae soluta qui maxime officia molestiae velit.</p>
-                </div>
+                <p className={style.title}>Habilidades</p>
                 <div className={style.cards}>
                     <div className={style.cardsCard}>
-                        <div className={style.cardsCardTitle} style={{ backgroundColor: "var(--orange)" }}>
+                        <div className={style.cardsCardTitle}>
                             <p className={style.cardsCardTitleText}>TÉCNICAS</p>
                         </div>
-                        <FaHandshake className={style.cardsCardIcon} style={{ backgroundColor: "var(--orange)" }} />
+                        <PiHeadCircuit className={style.cardsCardIcon} />
                         <ul className={style.cardsCardData}>
                             <li className={style.cardsCardDataElement}>- Compañerismo</li>
                             <li className={style.cardsCardDataElement}>- Responsabilidad</li>
@@ -26,10 +23,10 @@ export default function Skills() {
                         </ul>
                     </div>
                     <div className={style.cardsCard}>
-                        <div className={style.cardsCardTitle} style={{ backgroundColor: "var(--lightBlue)" }}>
+                        <div className={style.cardsCardTitle}>
                             <p className={style.cardsCardTitleText}>BLANDAS</p>
                         </div>
-                        <PiHeadCircuit className={style.cardsCardIcon} style={{ backgroundColor: "var(--lightBlue)" }} />
+                        <FaHandshake className={style.cardsCardIcon} />
                         <ul className={style.cardsCardData}>
                             <li className={style.cardsCardDataElement}>- Paquete Adobe</li>
                             <li className={style.cardsCardDataElement}>- Paquete Microsoft</li>
@@ -42,10 +39,10 @@ export default function Skills() {
                         </ul>
                     </div>
                     <div className={style.cardsCard}>
-                        <div className={style.cardsCardTitle} style={{ backgroundColor: "var(--blue)" }}>
+                        <div className={style.cardsCardTitle}>
                             <p className={style.cardsCardTitleText}>IDIOMAS</p>
                         </div>
-                        <FaBookBookmark className={style.cardsCardIcon} style={{ backgroundColor: "var(--blue)" }} />
+                        <FaBookBookmark className={style.cardsCardIcon} />
                         <ul className={style.cardsCardData}>
                             <li className={style.cardsCardDataElement}>- Español: Nativo</li>
                             <li className={style.cardsCardDataElement}>- Ingles: C1</li>

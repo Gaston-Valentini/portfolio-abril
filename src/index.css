@@ -21,6 +21,14 @@
     background-color: var(--cream);
 }
 
+.slick-arrow {
+    color: var(--orange);
+}
+
+.slick-arrow:hover {
+    color: var(--blue);
+}
+
 @media (max-width: 767px) {
     ::-webkit-scrollbar-thumb {
         border-top: 50px solid var(--cream);

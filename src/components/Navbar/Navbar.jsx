@@ -14,7 +14,9 @@ export default function Navbar() {
     return (
         <nav className={style.container}>
             <div className={style.logo}>
+                <hr style={{ width: "20px" }} />
                 <img src={logo} />
+                <hr />
             </div>
             <RiMenuUnfoldLine className={!isOpen ? style.bars : `${style.bars} ${style.barsOpen}`} onClick={switchOpen} />
             <div className={!isOpen ? style.overlay : `${style.overlay} ${style.overlayOpen}`}>

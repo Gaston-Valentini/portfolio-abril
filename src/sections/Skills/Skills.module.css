@@ -10,22 +10,10 @@
     gap: 50px;
 }
 
-.heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.headingTitle {
+.title {
     font-size: 60px;
     font-weight: 800;
     color: var(--lightBlue);
-}
-
-.headingText {
-    max-width: 1000px;
-    text-align: center;
-    color: var(--blue);
 }
 
 .cards {
@@ -46,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--brown);
     border-radius: 10px 10px 0 0;
 }
 
@@ -61,7 +50,8 @@
     padding: 10px;
     font-size: 30px;
     color: var(--cream);
-    border: 5px solid white;
+    background-color: var(--brown);
+    border: 5px solid var(--cream);
     border-radius: 10px;
 }
 
@@ -69,8 +59,9 @@
     padding: 50px 25px 25px;
     list-style: none;
     color: var(--blue);
-    background-color: white;
+    background-color: var(--cream);
     border-radius: 0 0 10px 10px;
+    border: 5px solid var(--brown);
 }
 
 .wave {

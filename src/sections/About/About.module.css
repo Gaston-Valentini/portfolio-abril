@@ -8,9 +8,8 @@
 
 .content {
     padding: 100px 50px 50px;
-    max-width: 1200px;
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 
@@ -101,7 +100,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
 }
 
 .dataTitle {
@@ -111,6 +110,11 @@
 }
 
 .dataText {
+    max-width: 400px;
+    font-family: var(--karla);
+    font-weight: 800;
+    text-align: justify;
+    font-size: 20px;
     color: var(--blue);
 }
 

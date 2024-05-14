@@ -79,7 +79,9 @@ export default function Contact() {
                 </div>
             </div>
             <div className={style.logo}>
+                <hr />
                 <img src={logo} />
+                <hr />
             </div>
             <div className={style.developer}>
                 Desarrollado por <a href="https://www.linkedin.com/in/gastonvalentini/">GASTÓN VALENTINI</a>

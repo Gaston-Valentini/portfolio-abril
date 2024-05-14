@@ -28,18 +28,7 @@ export default function About() {
                 </div>
                 <div className={style.data}>
                     <p className={style.dataTitle}>¿Quién soy?</p>
-                    <p className={style.dataText}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut accusamus illum molestias a hic nobis ea perferendis laboriosam placeat culpa reprehenderit omnis reiciendis autem, animi repudiandae dolores. Modi, consectetur iste!
-                        <br />
-                        <br />
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, beatae. Esse non iusto, cumque nihil obcaecati modi nobis ut rerum, repudiandae voluptates distinctio! Voluptatibus obcaecati aperiam ullam quo, at unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, beatae. Esse non iusto, cumque nihil obcaecati modi nobis ut rerum, repudiandae voluptates distinctio! Voluptatibus obcaecati aperiam ullam quo, at unde.
-                        <br />
-                        <br />
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, beatae. Esse non iusto, cumque nihil obcaecati modi nobis ut rerum, repudiandae voluptates distinctio! Voluptatibus obcaecati aperiam ullam quo, at unde.
-                        <br />
-                        <br />
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, beatae. Esse non iusto, cumque nihil obcaecati modi nobis ut rerum, repudiandae voluptates distinctio! Voluptatibus obcaecati aperiam ullam quo, at unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, beatae. Esse non iusto, cumque nihil obcaecati modi nobis ut rerum, repudiandae voluptates distinctio! Voluptatibus obcaecati aperiam ullam quo, at unde.
-                    </p>
+                    <p className={style.dataText}>Abril Valentini, originaria de Argentina, estudió Diseño de Indumentaria y Textil en la Universidad de Mendoza. Especializándose en vestuario teatral y estilismo, ha seguido desarrollándose en confección de vestidos de fiesta y un emprendimiento propio de accesorios. Ahora en Alicante, busca colaborar con artistas musicales y directores audiovisuales.</p>
                 </div>
             </div>
             <div style={{ height: "150px", width: "100%", overflow: "hidden" }}>
