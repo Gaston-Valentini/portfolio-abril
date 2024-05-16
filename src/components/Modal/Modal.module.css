@@ -58,7 +58,7 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -66,6 +66,10 @@
     height: 100%;
     width: 100%;
     border: 2px solid var(--cream);
+}
+
+.galleryImage:last-child {
+    grid-column-end: span 2;
 }
 
 .galleryImage img {
@@ -92,5 +96,8 @@
 @media (max-width: 991px) {
     .gallery {
         grid-template-columns: 1fr;
+    }
+    .galleryImage:last-child {
+        grid-column-end: auto;
     }
 }
