@@ -23,7 +23,7 @@
     gap: 20px;
     background-color: var(--blue);
     border: 10px solid var(--cream);
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .name {
@@ -57,13 +57,15 @@
 .gallery {
     height: 100%;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
 .galleryImage {
     height: 100%;
     width: 100%;
+    border: 2px solid var(--cream);
 }
 
 .galleryImage img {
@@ -89,6 +91,6 @@
 
 @media (max-width: 991px) {
     .gallery {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }

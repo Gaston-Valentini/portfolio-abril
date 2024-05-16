@@ -16,15 +16,24 @@ import rapportThree from "../assets/images/project-rapport-3.jpeg";
 import lsdOne from "../assets/images/project-lsd-1.jpeg";
 import lsdTwo from "../assets/images/project-lsd-2.jpeg";
 import lsdThree from "../assets/images/project-lsd-3.jpeg";
+import lsdFour from "../assets/images/project-lsd-4.jpeg";
+import lsdFive from "../assets/images/project-lsd-5.jpeg";
+import lsdSix from "../assets/images/project-lsd-6.jpeg";
+import lsdSeven from "../assets/images/project-lsd-7.jpeg";
 import emprendimientoOne from "../assets/images/project-emprendimiento-1.jpeg";
 import emprendimientoTwo from "../assets/images/project-emprendimiento-2.jpeg";
 import emprendimientoThree from "../assets/images/project-emprendimiento-3.jpeg";
 import jasSunMoonOne from "../assets/images/project-jas-sun-moon-1.jpeg";
 import jasSunMoonTwo from "../assets/images/project-jas-sun-moon-2.jpeg";
 import jasSunMoonThree from "../assets/images/project-jas-sun-moon-3.jpeg";
+import jasSunMoonFour from "../assets/images/project-jas-sun-moon-4.jpeg";
+import jasSunMoonFive from "../assets/images/project-jas-sun-moon-5.jpeg";
 import jasApocalipsisOne from "../assets/images/project-jas-apocalipsis-1.jpeg";
 import jasApocalipsisTwo from "../assets/images/project-jas-apocalipsis-2.jpeg";
 import jasApocalipsisThree from "../assets/images/project-jas-apocalipsis-3.jpeg";
+import jasApocalipsisFour from "../assets/images/project-jas-apocalipsis-4.jpeg";
+import jasApocalipsisFive from "../assets/images/project-jas-apocalipsis-5.jpeg";
+import jasApocalipsisSix from "../assets/images/project-jas-apocalipsis-6.jpeg";
 
 const projects = [
     {
@@ -61,7 +70,7 @@ const projects = [
         id: 6,
         name: "Fashion Photoshoot",
         description: <p>Producción fotográfica para revista, inspirada en los efectos alucinógenos del LSD, en colaboración con marcas locales, maquilladora, estilista, manicurista, fotógrafos y locaciones varias.</p>,
-        gallery: [lsdOne, lsdTwo, lsdThree],
+        gallery: [lsdOne, lsdTwo, lsdThree, lsdFour, lsdFive, lsdSix, lsdSeven],
     },
     {
         id: 7,
@@ -73,13 +82,13 @@ const projects = [
         id: 8,
         name: "JAS Producciones",
         description: <p>Vestuario teatral como proyecto de tesis de grado, inspirado en el Sol y la Luna, para videoclip musical a cargo de "Cóndor Andino Films".</p>,
-        gallery: [jasSunMoonOne, jasSunMoonTwo, jasSunMoonThree],
+        gallery: [jasSunMoonOne, jasSunMoonTwo, jasSunMoonThree, jasSunMoonFour, jasSunMoonFive],
     },
     {
         id: 9,
         name: "JAS Producciones",
         description: <p>Vestuario teatral como proyecto de tesis de grado, inspirado en indumentaria postapocaliptica y colores neutros, para videoclip musical a cargo de " Cóndor Andino Films".</p>,
-        gallery: [jasApocalipsisOne, jasApocalipsisTwo, jasApocalipsisThree],
+        gallery: [jasApocalipsisOne, jasApocalipsisTwo, jasApocalipsisThree, jasApocalipsisFour, jasApocalipsisFive, jasApocalipsisSix],
     },
 ];
 

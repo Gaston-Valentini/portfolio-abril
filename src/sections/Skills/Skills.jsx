@@ -12,20 +12,6 @@ export default function Skills() {
                         <div className={style.cardsCardTitle}>
                             <p className={style.cardsCardTitleText}>TÉCNICAS</p>
                         </div>
-                        <PiHeadCircuit className={style.cardsCardIcon} />
-                        <ul className={style.cardsCardData}>
-                            <li className={style.cardsCardDataElement}>- Compañerismo</li>
-                            <li className={style.cardsCardDataElement}>- Responsabilidad</li>
-                            <li className={style.cardsCardDataElement}>- Atención al detalle</li>
-                            <li className={style.cardsCardDataElement}>- Resolución de problemas</li>
-                            <li className={style.cardsCardDataElement}>- Carisma</li>
-                            <li className={style.cardsCardDataElement}>- Creatividad</li>
-                        </ul>
-                    </div>
-                    <div className={style.cardsCard}>
-                        <div className={style.cardsCardTitle}>
-                            <p className={style.cardsCardTitleText}>BLANDAS</p>
-                        </div>
                         <FaHandshake className={style.cardsCardIcon} />
                         <ul className={style.cardsCardData}>
                             <li className={style.cardsCardDataElement}>- Paquete Adobe</li>
@@ -36,6 +22,20 @@ export default function Skills() {
                             <li className={style.cardsCardDataElement}>- Geometrales</li>
                             <li className={style.cardsCardDataElement}>- Ficha técnica</li>
                             <li className={style.cardsCardDataElement}>- Rapport</li>
+                        </ul>
+                    </div>
+                    <div className={style.cardsCard}>
+                        <div className={style.cardsCardTitle}>
+                            <p className={style.cardsCardTitleText}>BLANDAS</p>
+                        </div>
+                        <PiHeadCircuit className={style.cardsCardIcon} />
+                        <ul className={style.cardsCardData}>
+                            <li className={style.cardsCardDataElement}>- Compañerismo</li>
+                            <li className={style.cardsCardDataElement}>- Responsabilidad</li>
+                            <li className={style.cardsCardDataElement}>- Atención al detalle</li>
+                            <li className={style.cardsCardDataElement}>- Resolución de problemas</li>
+                            <li className={style.cardsCardDataElement}>- Carisma</li>
+                            <li className={style.cardsCardDataElement}>- Creatividad</li>
                         </ul>
                     </div>
                     <div className={style.cardsCard}>
