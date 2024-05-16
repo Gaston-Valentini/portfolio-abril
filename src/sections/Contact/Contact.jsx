@@ -66,7 +66,7 @@ export default function Contact() {
                 <div className={style.formData}>
                     <div className={style.formDataElement}>
                         <FaLocationDot />
-                        <p className={style.formInputsElementText}>Calle botella de hornos, 7</p>
+                        <p className={style.formInputsElementText}>Calle botella de hornos, 7 - Alicante</p>
                     </div>
                     <div className={style.formDataElement}>
                         <FaPhone />

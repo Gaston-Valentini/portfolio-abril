@@ -2,10 +2,21 @@ import style from "./Projects.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import Modal from "../../components/Modal/Modal";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { projects } from "../../data/data";
+import { useState } from "react";
 
 export default function Projects() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const [modalInfo, setModalInfo] = useState({
+        name: "",
+        description: "",
+        gallery: [],
+    });
+
     const settings = {
         speed: 500,
         slidesToShow: 4,
@@ -39,22 +50,14 @@ export default function Projects() {
 
     return (
         <section className={style.container} id="proyects">
+            {isModalOpen ? <Modal modalInfo={modalInfo} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} /> : <></>}
             <p className={style.title}>Proyectos</p>
             <div className={style.content}>
                 <div className={style.line}></div>
                 <div className={style.proyects}>
                     <Slider {...settings}>
-                        {projects.map((e) => (
-                            <div key={e.id} className={style.proyectsCard}>
-                                <div className={style.proyectsCardBorder}>
-                                    <div className={style.proyectsCardContent} style={{ backgroundImage: `url(${e.image})` }}>
-                                        <div className={style.proyectsCardContentOverlay}>
-                                            <p className={style.proyectsCardContentName}>{e.name}</p>
-                                            <p className={style.proyectsCardContentShow}>Ver detalles</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        {projects.map((card) => (
+                            <ProjectCard key={card.id} card={card} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} setModalInfo={setModalInfo} />
                         ))}
                     </Slider>
                 </div>
