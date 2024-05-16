@@ -55,7 +55,7 @@
 
 .containerContentShow {
     padding: 10px;
-    font-family: var(--karla);
+    font-family: var(--secondary);
     font-weight: 800;
     color: var(--blue);
     border: 2px solid var(--blue);

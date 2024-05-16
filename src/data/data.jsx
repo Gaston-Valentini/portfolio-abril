@@ -23,6 +23,8 @@ import lsdSeven from "../assets/images/project-lsd-7.jpeg";
 import emprendimientoOne from "../assets/images/project-emprendimiento-1.jpeg";
 import emprendimientoTwo from "../assets/images/project-emprendimiento-2.jpeg";
 import emprendimientoThree from "../assets/images/project-emprendimiento-3.jpeg";
+import emprendimientoFour from "../assets/images/project-emprendimiento-4.jpeg";
+import emprendimientoFive from "../assets/images/project-emprendimiento-5.jpeg";
 import jasSunMoonOne from "../assets/images/project-jas-sun-moon-1.jpeg";
 import jasSunMoonTwo from "../assets/images/project-jas-sun-moon-2.jpeg";
 import jasSunMoonThree from "../assets/images/project-jas-sun-moon-3.jpeg";
@@ -33,7 +35,6 @@ import jasApocalipsisTwo from "../assets/images/project-jas-apocalipsis-2.jpeg";
 import jasApocalipsisThree from "../assets/images/project-jas-apocalipsis-3.jpeg";
 import jasApocalipsisFour from "../assets/images/project-jas-apocalipsis-4.jpeg";
 import jasApocalipsisFive from "../assets/images/project-jas-apocalipsis-5.jpeg";
-import jasApocalipsisSix from "../assets/images/project-jas-apocalipsis-6.jpeg";
 
 const projects = [
     {
@@ -62,7 +63,7 @@ const projects = [
     },
     {
         id: 5,
-        name: "Rpport",
+        name: "Rapport",
         description: <p>Diseño de conjunto inspirado en el pop-punk de los 2000, uso de rapport artesanal, rapport digital y corte láser.</p>,
         gallery: [rapportOne, rapportTwo, rapportThree],
     },
@@ -76,7 +77,7 @@ const projects = [
         id: 7,
         name: "Marca Propia",
         description: <p>Emprendimiento personal de "Masacre", diseño de accesorios y bodychains customizados .</p>,
-        gallery: [emprendimientoOne, emprendimientoTwo, emprendimientoThree],
+        gallery: [emprendimientoOne, emprendimientoTwo, emprendimientoThree, emprendimientoFour, emprendimientoFive],
     },
     {
         id: 8,
@@ -88,7 +89,7 @@ const projects = [
         id: 9,
         name: "JAS Producciones",
         description: <p>Vestuario teatral como proyecto de tesis de grado, inspirado en indumentaria postapocaliptica y colores neutros, para videoclip musical a cargo de " Cóndor Andino Films".</p>,
-        gallery: [jasApocalipsisOne, jasApocalipsisTwo, jasApocalipsisThree, jasApocalipsisFour, jasApocalipsisFive, jasApocalipsisSix],
+        gallery: [jasApocalipsisOne, jasApocalipsisTwo, jasApocalipsisThree, jasApocalipsisFour, jasApocalipsisFive],
     },
 ];
 

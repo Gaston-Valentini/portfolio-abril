@@ -51,7 +51,7 @@
     text-decoration: none;
     white-space: nowrap;
     font-weight: 800;
-    font-family: var(--karla);
+    font-family: var(--secondary);
     color: var(--blue);
     position: relative;
 }

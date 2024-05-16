@@ -12,7 +12,7 @@ export default function Skills() {
                         <div className={style.cardsCardTitle}>
                             <p className={style.cardsCardTitleText}>TÉCNICAS</p>
                         </div>
-                        <FaHandshake className={style.cardsCardIcon} />
+                        <PiHeadCircuit className={style.cardsCardIcon} />
                         <ul className={style.cardsCardData}>
                             <li className={style.cardsCardDataElement}>- Paquete Adobe</li>
                             <li className={style.cardsCardDataElement}>- Paquete Microsoft</li>
@@ -28,7 +28,7 @@ export default function Skills() {
                         <div className={style.cardsCardTitle}>
                             <p className={style.cardsCardTitleText}>BLANDAS</p>
                         </div>
-                        <PiHeadCircuit className={style.cardsCardIcon} />
+                        <FaHandshake className={style.cardsCardIcon} />
                         <ul className={style.cardsCardData}>
                             <li className={style.cardsCardDataElement}>- Compañerismo</li>
                             <li className={style.cardsCardDataElement}>- Responsabilidad</li>
