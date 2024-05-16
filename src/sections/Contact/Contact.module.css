@@ -49,6 +49,7 @@
 .formInputsFieldsElements textarea {
     height: 25px;
     padding: 10px 15px;
+    font-family: var(--secondary);
     border: none;
     background-color: var(--cream);
     border-radius: 35px;
@@ -57,6 +58,7 @@
 
 .formInputsFieldsElements input::placeholder,
 .formInputsFieldsElements textarea::placeholder {
+    font-family: var(--secondary);
     color: var(--blue);
 }
 
@@ -107,7 +109,13 @@
 }
 
 .formDataElement svg {
+    color: var(--blue);
     font-size: 20px;
+}
+
+.formDataElementText {
+    font-family: var(--secondary);
+    color: var(--cream);
 }
 
 .logo {
@@ -129,11 +137,13 @@
 }
 
 .developer {
+    font-family: var(--secondary);
     color: var(--cream);
     font-weight: 800;
 }
 
 .developer a {
+    font-family: var(--secondary);
     text-decoration: none;
     color: var(--blue);
 }

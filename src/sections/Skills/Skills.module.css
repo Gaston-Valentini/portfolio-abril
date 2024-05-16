@@ -58,10 +58,15 @@
 .cardsCardData {
     padding: 50px 25px 25px;
     list-style: none;
-    color: var(--blue);
+
     background-color: var(--cream);
     border-radius: 0 0 10px 10px;
     border: 5px solid var(--brown);
+}
+
+.cardsCardDataElement {
+    font-family: var(--secondary);
+    color: var(--blue);
 }
 
 .wave {

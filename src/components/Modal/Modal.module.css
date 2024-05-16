@@ -33,6 +33,7 @@
 
 .description {
     text-align: center;
+    font-family: var(--secondary);
     color: var(--cream);
 }
 

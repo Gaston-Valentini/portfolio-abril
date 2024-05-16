@@ -66,15 +66,15 @@ export default function Contact() {
                 <div className={style.formData}>
                     <div className={style.formDataElement}>
                         <FaLocationDot />
-                        <p className={style.formInputsElementText}>Calle botella de hornos, 7 - Alicante</p>
+                        <p className={style.formDataElementText}>Calle botella de hornos, 7 - Alicante</p>
                     </div>
                     <div className={style.formDataElement}>
                         <FaPhone />
-                        <p className={style.formInputsElementText}>+34631159030</p>
+                        <p className={style.formDataElementText}>+34631159030</p>
                     </div>
                     <div className={style.formDataElement}>
                         <MdOutlineMailOutline />
-                        <p className={style.formInputsElementText}>abril.valentini.a@gmail.com</p>
+                        <p className={style.formDataElementText}>abril.valentini.a@gmail.com</p>
                     </div>
                 </div>
             </div>
