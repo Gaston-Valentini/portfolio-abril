@@ -83,6 +83,16 @@
     background-color: var(--cream);
 }
 
+.formInputsFieldsSubmit:disabled {
+    opacity: 0.5;
+}
+
+.formInputsFieldsSubmit:disabled:hover {
+    cursor: not-allowed;
+    color: var(--cream);
+    background-color: var(--brown);
+}
+
 .formInputsFieldsSubmit svg {
     font-size: 25px;
 }
