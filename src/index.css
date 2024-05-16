@@ -4,8 +4,8 @@
     --lightBlue: #15616d;
     --orange: #ff7d00;
     --brown: #78290f;
-    --kaushan: "Kaushan Script", cursive;
-    --secondary: "Karla", sans-serif;
+    --primary: "Kaushan Script", cursive;
+    --secondary: "Josefin Sans", sans-serif;
 }
 
 ::-webkit-scrollbar {

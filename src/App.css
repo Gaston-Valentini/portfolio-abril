@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-size: 16px;
-    font-family: var(--kaushan);
+    font-family: var(--primary);
     scroll-behavior: smooth;
     scroll-margin-top: 60px;
 }
