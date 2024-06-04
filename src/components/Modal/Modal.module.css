@@ -94,7 +94,7 @@
     background-color: rgb(224, 50, 50);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .gallery {
         grid-template-columns: 1fr;
     }

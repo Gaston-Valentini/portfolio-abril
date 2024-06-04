@@ -71,7 +71,7 @@
     width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .container {
         height: 50px;
     }
