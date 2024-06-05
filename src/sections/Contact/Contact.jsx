@@ -1,6 +1,5 @@
 import style from "./Contact.module.css";
 import { FaRegPaperPlane } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import logo from "../../assets/images/logo-blue.png";
@@ -19,22 +18,29 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, formRef.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY).then(
-            (result) => {
-                console.log(result);
-                setMessage(200);
-                setTimeout(() => {
-                    setMessage();
-                }, 3000);
-            },
-            (error) => {
-                console.log(error);
-                setMessage(400);
-                setTimeout(() => {
-                    setMessage();
-                }, 3000);
-            }
-        );
+        emailjs
+            .sendForm(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                formRef.current,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            )
+            .then(
+                (result) => {
+                    console.log(result);
+                    setMessage(200);
+                    setTimeout(() => {
+                        setMessage();
+                    }, 3000);
+                },
+                (error) => {
+                    console.log(error);
+                    setMessage(400);
+                    setTimeout(() => {
+                        setMessage();
+                    }, 3000);
+                }
+            );
     };
 
     const handleChange = (e) => {
@@ -67,10 +73,6 @@ export default function Contact() {
                     <div className={style.formDataElement}>
                         <FaLocationDot />
                         <p className={style.formDataElementText}>Alicante - Communitat Valenciana - España</p>
-                    </div>
-                    <div className={style.formDataElement}>
-                        <FaPhone />
-                        <p className={style.formDataElementText}>+34631159030</p>
                     </div>
                     <div className={style.formDataElement}>
                         <MdOutlineMailOutline />
