@@ -19,9 +19,8 @@
 
 ## Descripción del Proyecto y Objetivo
 
-Este proyecto consiste en el desarrollo del portafolio web de Abril Valentini, una diseñadora de moda y estilista. Se trata de un trabajo freelance
-cuyo objetivo es exponer los trabajos realizados por esta profesional, junto una breve descripción de su perfil, sus habilidades técnicas y blandas, y
-un formulario para ponerse en contacto junto con otros datos.
+Este proyecto consiste en el desarrollo del portafolio web de [Abril Valentini](https://www.abrilvalentini.com/), una diseñadora de moda y estilista. Se trata de un trabajo freelance cuyo objetivo es
+exponer los trabajos realizados por esta profesional, junto una breve descripción de su perfil, sus habilidades técnicas y blandas, y un formulario para ponerse en contacto junto con otros datos.
 
 ## Capturas de pantalla
 
@@ -43,12 +42,10 @@ un formulario para ponerse en contacto junto con otros datos.
 ## Características
 
 -   Diseño web moderno y responsivo, adaptado a todas las resoluciones de pantalla.
--   Presentación visual del contenido mediante la implementación de carruseles con la biblioteca
-    [react-slick](https://www.npmjs.com/package/react-slick).
+-   Presentación visual del contenido mediante la implementación de carruseles con la biblioteca [react-slick](https://www.npmjs.com/package/react-slick).
 -   Implementación de elementos de diseño como íconos con la librería de [react-icons](https://react-icons.github.io/react-icons/).
 -   Presentación de un botón fijo en la pantalla que permite contactar al instante mediante Whatsapp.
--   Implementación del servicio de [EmailJS](https://www.emailjs.com/) para gestionar el envío de correos electrónicos mediante un formulario al
-    correo de la profesional.
+-   Implementación del servicio de [EmailJS](https://www.emailjs.com/) para gestionar el envío de correos electrónicos mediante un formulario al correo de la profesional.
 -   Implementación de una vista modal desarrollada con código nativo para exponer los proyectos detalladamente.
 -   Implementación de variables de entorno, con el objetivo de mantener la privacidad y seguridad del usuario y ocultar información sensible.
 
